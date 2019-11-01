@@ -63,6 +63,7 @@
   </ItemGroup>
   <ItemGroup>
     <Compile Include="Assets\Scripts\Animal.cs" />
+    <Compile Include="Assets\Scripts\MainMenu.cs" />
     <Reference Include="Unity.Timeline.Editor">
       <HintPath>C:/Users/sobo_/Documents/Tycoon_Game/Tycoon_Game/Library/ScriptAssemblies/Unity.Timeline.Editor.dll</HintPath>
     </Reference>
