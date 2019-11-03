@@ -64,7 +64,11 @@
   </ItemGroup>
   <ItemGroup>
     <Compile Include="Assets\Scripts\Animal.cs" />
+<<<<<<< HEAD
     <Compile Include="Assets\Scripts\PlayButton.cs" />
+=======
+    <Compile Include="Assets\Scripts\MainMenu.cs" />
+>>>>>>> ca30f35ca1332f1a10aa1375829cab20ab053f10
     <Reference Include="Unity.Timeline.Editor">
       <HintPath>C:/Users/mi2/spbu/Tycoon_Game/Tycoon_Game/Library/ScriptAssemblies/Unity.Timeline.Editor.dll</HintPath>
     </Reference>
