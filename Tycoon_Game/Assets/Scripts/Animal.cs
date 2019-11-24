@@ -1,6 +1,9 @@
-﻿using System.Collections;
+﻿using System;
+using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
+
+public delegate void Moving();
 
 public class Animal : MonoBehaviour
 {
@@ -13,12 +16,29 @@ public class Animal : MonoBehaviour
 
     private float timer;
 
+    private Moving[] moving;
+
+    private System.Random rand;
+
     // Start is called before the first frame update
     void Start()
     {
+        //Массив из методов движения, из которых раз в какой-то период времени будет выбираться и вызываться случайный.
+        moving = new Moving[4];
+        moving[0] = GoUp;
+        moving[1] = GoDown;
+        moving[2] = GoLeft;
+        moving[3] = GoRight;
+
+        //Случайно выбирается направление, куда пойдет животное сначала.
+        //int randomIndex = rand.Next(0, 4);
+        //moving[randomIndex].Invoke();
         direction = new Vector3(0.0f, 1.0f, 0.0f);
+
         waitTime = 2.0f;
         timer =  0.0f;
+
+        rand = new System.Random();
     }
 
     // Update is called once per frame
@@ -38,7 +58,9 @@ public class Animal : MonoBehaviour
 
             //Меняем waitTime на случайное число в каком-то диапазоне
 
-            GoDown(); //Тут надо сделать так, чтобы вызывался случайных метод из GoUp(), GoDown(), GoLeft(), GoRight()
+            //Тут надо сделать так, чтобы вызывался случайных метод из GoUp(), GoDown(), GoLeft(), GoRight()
+            int randomIndex = rand.Next(0,4);
+            moving[randomIndex].Invoke();
         }
     }
 
@@ -69,8 +91,10 @@ public class Animal : MonoBehaviour
     void GoRight()
     {
         //Меняем направление
-        direction = new Vector3(1.0f, 1.0f, 0.0f);
+        direction = new Vector3(1.0f, 0.0f, 0.0f);
 
         //Переключаем анимацию
     }
 }
+
+
