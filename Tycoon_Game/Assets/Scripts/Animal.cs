@@ -23,22 +23,23 @@ public class Animal : MonoBehaviour
     // Start is called before the first frame update
     void Start()
     {
+        rand = new System.Random();
+
         //Массив из методов движения, из которых раз в какой-то период времени будет выбираться и вызываться случайный.
-        moving = new Moving[4];
+        moving = new Moving[5];
         moving[0] = GoUp;
         moving[1] = GoDown;
         moving[2] = GoLeft;
         moving[3] = GoRight;
+        moving[4] = StandStill;
 
         //Случайно выбирается направление, куда пойдет животное сначала.
-        //int randomIndex = rand.Next(0, 4);
-        //moving[randomIndex].Invoke();
-        direction = new Vector3(0.0f, 1.0f, 0.0f);
+        int randomIndex = rand.Next(0, 5);
+        moving[randomIndex].Invoke();
 
-        waitTime = 2.0f;
+        //Случайно выбирается промежуток времени, в течение которого животное не будет менять направление движения.
+        waitTime = rand.Next(1, 6) + (float)rand.NextDouble();
         timer =  0.0f;
-
-        rand = new System.Random();
     }
 
     // Update is called once per frame
@@ -48,19 +49,18 @@ public class Animal : MonoBehaviour
 
         timer += Time.deltaTime;
 
-        // Check if we have reached beyond 2 seconds.
-        // Subtracting two is more accurate over time than resetting to zero.
+        //Проверяем, не прошло ли время waitTime. Если да, то животное меняет направление движения.
         if (timer > waitTime)
         {
-
-            // Remove the recorded 2 seconds.
+            //Удаляем время waitTime.
             timer -= waitTime;
 
-            //Меняем waitTime на случайное число в каком-то диапазоне
-
-            //Тут надо сделать так, чтобы вызывался случайных метод из GoUp(), GoDown(), GoLeft(), GoRight()
-            int randomIndex = rand.Next(0,4);
+            //Случайно выбирается направление, куда пойдет животное.
+            int randomIndex = rand.Next(0, 5);
             moving[randomIndex].Invoke();
+
+            //Случайно выбирается промежуток времени, в течение которого животное не будет менять направление движения.
+            waitTime = rand.Next(1, 6) + (float)rand.NextDouble();
         }
     }
 
@@ -94,6 +94,14 @@ public class Animal : MonoBehaviour
         direction = new Vector3(1.0f, 0.0f, 0.0f);
 
         //Переключаем анимацию
+    }
+
+    void StandStill()
+    {
+        //Меняем направление на нулевое.
+        direction = new Vector3(0.0f, 0.0f, 0.0f);
+
+        //Приостанавливаем анимацию
     }
 }
 
