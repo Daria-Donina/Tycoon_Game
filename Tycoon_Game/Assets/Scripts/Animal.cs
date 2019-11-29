@@ -20,9 +20,15 @@ public class Animal : MonoBehaviour
 
     private System.Random rand;
 
+    private Animator animator;
+
+    private string animationState = "AnimationState";
+
     // Start is called before the first frame update
     void Start()
     {
+        animator = GetComponent<Animator>();
+
         rand = new System.Random();
 
         //Массив из методов движения, из которых раз в какой-то период времени будет выбираться и вызываться случайный.
@@ -64,12 +70,22 @@ public class Animal : MonoBehaviour
         }
     }
 
+    enum CharStates
+    {
+        goDown = 1,
+        goUp = 2,
+        goRight = 3,
+        goLeft = 4
+    }
+
     void GoUp()
     {
         //Меняем направление
         direction = new Vector3(0.0f, 1.0f, 0.0f);
 
         //Переключаем анимацию
+        animator.enabled = true;
+        animator.SetInteger(animationState, (int)CharStates.goUp);
     }
 
     void GoDown()
@@ -78,6 +94,8 @@ public class Animal : MonoBehaviour
         direction = new Vector3(0.0f, -1.0f, 0.0f);
 
         //Переключаем анимацию
+        animator.enabled = true;
+        animator.SetInteger(animationState, (int)CharStates.goDown);
     }
 
     void GoLeft()
@@ -86,6 +104,8 @@ public class Animal : MonoBehaviour
         direction = new Vector3(-1.0f, 0.0f, 0.0f);
 
         //Переключаем анимацию
+        animator.enabled = true;
+        animator.SetInteger(animationState, (int)CharStates.goLeft);
     }
 
     void GoRight()
@@ -94,6 +114,8 @@ public class Animal : MonoBehaviour
         direction = new Vector3(1.0f, 0.0f, 0.0f);
 
         //Переключаем анимацию
+        animator.enabled = true;
+        animator.SetInteger(animationState, (int)CharStates.goRight);
     }
 
     void StandStill()
@@ -102,6 +124,7 @@ public class Animal : MonoBehaviour
         direction = new Vector3(0.0f, 0.0f, 0.0f);
 
         //Приостанавливаем анимацию
+        animator.enabled = false;
     }
 }
 

@@ -1888,7 +1888,7 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 519420028}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: 0, y: 0, z: -10}
+  m_LocalPosition: {x: -1.49, y: 0, z: -10}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children: []
   m_Father: {fileID: 0}
@@ -2024,6 +2024,11 @@ PrefabInstance:
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
       objectReference: {fileID: 0}
+    - target: {fileID: 2141684467286062107, guid: a284c70efe89841469aa40ac7a1b1114,
+        type: 3}
+      propertyPath: m_CullingMode
+      value: 1
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: a284c70efe89841469aa40ac7a1b1114, type: 3}
 --- !u!1001 &8517769361628258249
@@ -2033,6 +2038,11 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 0}
     m_Modifications:
+    - target: {fileID: 8706398087379319804, guid: a47e1aad8f4014342838d6cce78cae07,
+        type: 3}
+      propertyPath: m_Name
+      value: WoodenFence
+      objectReference: {fileID: 0}
     - target: {fileID: 7130503106924708431, guid: a47e1aad8f4014342838d6cce78cae07,
         type: 3}
       propertyPath: m_Points.Array.size
@@ -2072,11 +2082,6 @@ PrefabInstance:
         type: 3}
       propertyPath: m_Points.Array.data[3].x
       value: 0.5
-      objectReference: {fileID: 0}
-    - target: {fileID: 8706398087379319804, guid: a47e1aad8f4014342838d6cce78cae07,
-        type: 3}
-      propertyPath: m_Name
-      value: WoodenFence
       objectReference: {fileID: 0}
     - target: {fileID: 7997258881842889387, guid: a47e1aad8f4014342838d6cce78cae07,
         type: 3}
