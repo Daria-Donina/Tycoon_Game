@@ -22,8 +22,6 @@ public class Animal : MonoBehaviour
 
     private Animator animator;
 
-    private string animationState = "AnimationState";
-
     // Start is called before the first frame update
     void Start()
     {
@@ -70,6 +68,9 @@ public class Animal : MonoBehaviour
         }
     }
 
+    /// <summary>
+    /// Перечисление чисел, каждое из которых соответствует своей анимации по Animation State.
+    /// </summary>
     enum CharStates
     {
         goDown = 1,
@@ -78,52 +79,71 @@ public class Animal : MonoBehaviour
         goLeft = 4
     }
 
+    /// <summary>
+    /// Задает направление движения животного вверх.
+    /// </summary>
     void GoUp()
     {
-        //Меняем направление
+        //Меняем направление.
         direction = new Vector3(0.0f, 1.0f, 0.0f);
 
-        //Переключаем анимацию
+        //Включаем анимацию на случай, если она была выключена в StandStill().
         animator.enabled = true;
-        animator.SetInteger(animationState, (int)CharStates.goUp);
+        //Переключаем анимацию.
+        animator.SetInteger("AnimationState", (int)CharStates.goUp);
     }
 
+    /// <summary>
+    /// Задает направление движения животного вниз.
+    /// </summary>
     void GoDown()
     {
-        //Меняем направление
+        //Меняем направление.
         direction = new Vector3(0.0f, -1.0f, 0.0f);
 
-        //Переключаем анимацию
+        //Включаем анимацию на случай, если она была выключена в StandStill().
         animator.enabled = true;
-        animator.SetInteger(animationState, (int)CharStates.goDown);
+        //Переключаем анимацию.
+        animator.SetInteger("AnimationState", (int)CharStates.goDown);
     }
 
+    /// <summary>
+    /// Задает направление движения животного влево.
+    /// </summary>
     void GoLeft()
     {
-        //Меняем направление
+        //Меняем направление.
         direction = new Vector3(-1.0f, 0.0f, 0.0f);
 
-        //Переключаем анимацию
+        //Включаем анимацию на случай, если она была выключена в StandStill().
         animator.enabled = true;
-        animator.SetInteger(animationState, (int)CharStates.goLeft);
+        //Переключаем анимацию.
+        animator.SetInteger("AnimationState", (int)CharStates.goLeft);
     }
 
+    /// <summary>
+    /// Задает направление движения животного вправо.
+    /// </summary>
     void GoRight()
     {
-        //Меняем направление
+        //Меняем направление.
         direction = new Vector3(1.0f, 0.0f, 0.0f);
 
-        //Переключаем анимацию
+        //Включаем анимацию на случай, если она была выключена в StandStill().
         animator.enabled = true;
-        animator.SetInteger(animationState, (int)CharStates.goRight);
+        //Переключаем анимацию.
+        animator.SetInteger("AnimationState", (int)CharStates.goRight);
     }
 
+    /// <summary>
+    /// Приостанавливает движение животного.
+    /// </summary>
     void StandStill()
     {
         //Меняем направление на нулевое.
         direction = new Vector3(0.0f, 0.0f, 0.0f);
 
-        //Приостанавливаем анимацию
+        //Приостанавливаем анимацию.
         animator.enabled = false;
     }
 }
