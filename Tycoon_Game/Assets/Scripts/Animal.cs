@@ -18,16 +18,12 @@ public class Animal : MonoBehaviour
 
     private Moving[] moving;
 
-    private System.Random rand;
-
     private Animator animator;
 
     // Start is called before the first frame update
     void Start()
     {
         animator = GetComponent<Animator>();
-
-        rand = new System.Random();
 
         //Массив из методов движения, из которых раз в какой-то период времени будет выбираться и вызываться случайный.
         moving = new Moving[5];
@@ -38,11 +34,11 @@ public class Animal : MonoBehaviour
         moving[4] = StandStill;
 
         //Случайно выбирается направление, куда пойдет животное сначала.
-        int randomIndex = rand.Next(0, 5);
+        int randomIndex = UnityEngine.Random.Range(0, 5);
         moving[randomIndex].Invoke();
 
         //Случайно выбирается промежуток времени, в течение которого животное не будет менять направление движения.
-        waitTime = rand.Next(1, 6) + (float)rand.NextDouble();
+        waitTime = UnityEngine.Random.Range(1, 6);
         timer =  0.0f;
     }
 
@@ -60,11 +56,11 @@ public class Animal : MonoBehaviour
             timer -= waitTime;
 
             //Случайно выбирается направление, куда пойдет животное.
-            int randomIndex = rand.Next(0, 5);
+            int randomIndex = UnityEngine.Random.Range(0, 5);
             moving[randomIndex].Invoke();
 
             //Случайно выбирается промежуток времени, в течение которого животное не будет менять направление движения.
-            waitTime = rand.Next(1, 6) + (float)rand.NextDouble();
+            waitTime = UnityEngine.Random.Range(1, 6);
         }
     }
 
@@ -80,7 +76,7 @@ public class Animal : MonoBehaviour
     }
 
     /// <summary>
-    /// Задает направление движения животного вверх.
+    /// Метод, задающий направление движения животного вверх.
     /// </summary>
     void GoUp()
     {
