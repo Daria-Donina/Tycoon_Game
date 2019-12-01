@@ -64,8 +64,10 @@
   </ItemGroup>
   <ItemGroup>
     <Compile Include="Assets\Scripts\Animal.cs" />
+    <Compile Include="Assets\Scripts\ExitStoreButton.cs" />
     <Compile Include="Assets\Scripts\PlayButton.cs" />
-    <None Include="Assets\Sprites\LA_Fence_Assets\1-Read Me.txt" />
+    <Compile Include="Assets\Scripts\StoreButton.cs" />
+    <None Include="Assets\Sprites\Barriers\info\1-Read Me.txt" />
     <Reference Include="Unity.Timeline.Editor">
       <HintPath>C:/Users/mi2/spbu/Tycoon_Game/Tycoon_Game/Library/ScriptAssemblies/Unity.Timeline.Editor.dll</HintPath>
     </Reference>
