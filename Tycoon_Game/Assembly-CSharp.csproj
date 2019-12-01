@@ -62,7 +62,8 @@
     </Reference>
   </ItemGroup>
   <ItemGroup>
-    <Compile Include="Assets\Scripts\Animal.cs" />
+    <Compile Include="Assets\Scripts\AnimalMoving.cs" />
+    <Compile Include="Assets\Scripts\AnimalNecessities.cs" />
     <Compile Include="Assets\Scripts\PlayButton.cs" />
     <None Include="Assets\Sprites\LA_Fence_Assets\1-Read Me.txt" />
     <Reference Include="Unity.Timeline.Editor">
