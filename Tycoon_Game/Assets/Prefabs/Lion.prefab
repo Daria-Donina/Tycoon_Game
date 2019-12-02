@@ -7,20 +7,35 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 0}
     m_Modifications:
-    - target: {fileID: 7275769718401691216, guid: 5e08376676d2e3e469d7833af0610a18,
+    - target: {fileID: 7275769718401691212, guid: 5e08376676d2e3e469d7833af0610a18,
         type: 3}
-      propertyPath: m_Name
-      value: Lion1
+      propertyPath: m_BodyType
+      value: 2
+      objectReference: {fileID: 0}
+    - target: {fileID: 7275769718401691213, guid: 5e08376676d2e3e469d7833af0610a18,
+        type: 3}
+      propertyPath: m_Offset.y
+      value: 0.0032718182
+      objectReference: {fileID: 0}
+    - target: {fileID: 7275769718401691213, guid: 5e08376676d2e3e469d7833af0610a18,
+        type: 3}
+      propertyPath: m_Size.x
+      value: 0.5167508
+      objectReference: {fileID: 0}
+    - target: {fileID: 7275769718401691213, guid: 5e08376676d2e3e469d7833af0610a18,
+        type: 3}
+      propertyPath: m_Size.y
+      value: 0.78884435
       objectReference: {fileID: 0}
     - target: {fileID: 7275769718401691215, guid: 5e08376676d2e3e469d7833af0610a18,
         type: 3}
       propertyPath: m_LocalPosition.x
-      value: -6.99813
+      value: -2.43
       objectReference: {fileID: 0}
     - target: {fileID: 7275769718401691215, guid: 5e08376676d2e3e469d7833af0610a18,
         type: 3}
       propertyPath: m_LocalPosition.y
-      value: -0.27898622
+      value: -1.37
       objectReference: {fileID: 0}
     - target: {fileID: 7275769718401691215, guid: 5e08376676d2e3e469d7833af0610a18,
         type: 3}
@@ -67,15 +82,10 @@ PrefabInstance:
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
       objectReference: {fileID: 0}
-    - target: {fileID: 7275769718401691214, guid: 5e08376676d2e3e469d7833af0610a18,
+    - target: {fileID: 7275769718401691216, guid: 5e08376676d2e3e469d7833af0610a18,
         type: 3}
-      propertyPath: m_SortingLayerID
-      value: -1836728973
-      objectReference: {fileID: 0}
-    - target: {fileID: 7275769718401691214, guid: 5e08376676d2e3e469d7833af0610a18,
-        type: 3}
-      propertyPath: m_SortingLayer
-      value: 1
+      propertyPath: m_Name
+      value: Lion1
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 5e08376676d2e3e469d7833af0610a18, type: 3}

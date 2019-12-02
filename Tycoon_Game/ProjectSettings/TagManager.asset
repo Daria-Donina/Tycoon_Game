@@ -14,9 +14,9 @@ TagManager:
   - 
   - 
   - Ignore Camera
-  - 
-  - 
-  - 
+  - Ground
+  - People
+  - Objects
   - 
   - 
   - 
@@ -38,6 +38,12 @@ TagManager:
   - 
   - 
   m_SortingLayers:
+  - name: Ground
+    uniqueID: 3949957879
+    locked: 0
   - name: Default
     uniqueID: 0
+    locked: 0
+  - name: People
+    uniqueID: 3879059057
     locked: 0

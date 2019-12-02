@@ -65,6 +65,7 @@
     <Compile Include="Assets\Scripts\AnimalMoving.cs" />
     <Compile Include="Assets\Scripts\AnimalNecessities.cs" />
     <Compile Include="Assets\Scripts\ExitStoreButton.cs" />
+    <Compile Include="Assets\Scripts\HumanMoving.cs" />
     <Compile Include="Assets\Scripts\PlayButton.cs" />
     <Compile Include="Assets\Scripts\StoreButton.cs" />
     <None Include="Assets\Sprites\Barriers\info\1-Read Me.txt" />

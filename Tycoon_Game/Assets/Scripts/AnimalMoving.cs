@@ -3,12 +3,12 @@ using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 
-public delegate void Moving();
-
 public class AnimalMoving : MonoBehaviour
 {
     [SerializeField]
     private float speed;
+
+    private delegate void Moving();
 
     private Vector3 direction;
 
