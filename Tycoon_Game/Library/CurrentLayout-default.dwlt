@@ -47,7 +47,7 @@ MonoBehaviour:
   m_MinSize: {x: 683, y: 494}
   m_MaxSize: {x: 14004, y: 14044}
   vertical: 0
-  controlID: 125
+  controlID: 124
 --- !u!114 &3
 MonoBehaviour:
   m_ObjectHideFlags: 52
@@ -293,10 +293,10 @@ MonoBehaviour:
     m_Tooltip: 
   m_Pos:
     serializedVersion: 2
-    x: 468
-    y: 181
-    width: 973
-    height: 501
+    x: 248
+    y: 72.66667
+    width: 753
+    height: 297
   m_ViewDataDictionary: {fileID: 0}
 --- !u!114 &13
 MonoBehaviour:
@@ -337,20 +337,20 @@ MonoBehaviour:
     m_SkipHidden: 0
     m_SearchArea: 1
     m_Folders:
-    - Assets/Prefabs
+    - Assets/Scripts
   m_ViewMode: 1
-  m_StartGridSize: 64
+  m_StartGridSize: 96
   m_LastFolders:
-  - Assets/Prefabs
-  m_LastFoldersGridSize: -1
+  - Assets/Scripts
+  m_LastFoldersGridSize: 96
   m_LastProjectPath: C:\Users\mi2\spbu\Tycoon_Game\Tycoon_Game
   m_LockTracker:
     m_IsLocked: 0
   m_FolderTreeState:
-    scrollPos: {x: 0, y: 0}
-    m_SelectedIDs: 5c380000
-    m_LastClickedID: 14428
-    m_ExpandedIDs: 000000004c2d0000662f0000523500008e3f00009242000000ca9a3b
+    scrollPos: {x: 0, y: 112.000854}
+    m_SelectedIDs: 0e420000
+    m_LastClickedID: 16910
+    m_ExpandedIDs: 000000008c340000ac360000a23c0000fe460000104a000000ca9a3b
     m_RenameOverlay:
       m_UserAcceptedRename: 0
       m_Name: 
@@ -378,7 +378,7 @@ MonoBehaviour:
     scrollPos: {x: 0, y: 0}
     m_SelectedIDs: 
     m_LastClickedID: 0
-    m_ExpandedIDs: 000000004c2d0000662f0000523500008e3f000092420000
+    m_ExpandedIDs: 000000008c340000ac360000a23c0000fe460000104a0000
     m_RenameOverlay:
       m_UserAcceptedRename: 0
       m_Name: 
@@ -405,7 +405,7 @@ MonoBehaviour:
   m_ListAreaState:
     m_SelectedInstanceIDs: 
     m_LastClickedInstanceID: 0
-    m_HadKeyboardFocusLastEvent: 0
+    m_HadKeyboardFocusLastEvent: 1
     m_ExpandedInstanceIDs: c6230000
     m_RenameOverlay:
       m_UserAcceptedRename: 0
@@ -422,7 +422,7 @@ MonoBehaviour:
       m_IsRenaming: 0
       m_OriginalEventType: 11
       m_IsRenamingFilename: 1
-      m_ClientGUIView: {fileID: 0}
+      m_ClientGUIView: {fileID: 5}
     m_CreateAssetUtility:
       m_EndAction: {fileID: 0}
       m_InstanceID: 0
@@ -431,7 +431,7 @@ MonoBehaviour:
       m_ResourceFile: 
     m_NewAssetIndexInList: -1
     m_ScrollPosition: {x: 0, y: 0}
-    m_GridSize: 64
+    m_GridSize: 96
   m_SkipHiddenPackages: 0
   m_DirectoriesAreaWidth: 115
 --- !u!114 &14
@@ -500,24 +500,24 @@ MonoBehaviour:
   m_ViewDataDictionary: {fileID: 0}
   m_SceneHierarchy:
     m_TreeViewState:
-      scrollPos: {x: 0, y: 0}
-      m_SelectedIDs: 50460000
-      m_LastClickedID: 18000
-      m_ExpandedIDs: 5efbffff5846000066460000
+      scrollPos: {x: 0, y: 24}
+      m_SelectedIDs: 824d0000
+      m_LastClickedID: 19842
+      m_ExpandedIDs: 40faffff4c4d0000764d0000824d0000984d0000a04d0000
       m_RenameOverlay:
         m_UserAcceptedRename: 0
-        m_Name: Bear
-        m_OriginalName: Bear
+        m_Name: 
+        m_OriginalName: 
         m_EditFieldRect:
           serializedVersion: 2
           x: 0
           y: 0
           width: 0
           height: 0
-        m_UserData: -1202
+        m_UserData: 0
         m_IsWaitingForDelay: 0
         m_IsRenaming: 0
-        m_OriginalEventType: 0
+        m_OriginalEventType: 11
         m_IsRenamingFilename: 0
         m_ClientGUIView: {fileID: 4}
       m_SearchString: 
@@ -563,9 +563,9 @@ MonoBehaviour:
   m_PlayAudio: 0
   m_AudioPlay: 0
   m_Position:
-    m_Target: {x: 9.301744, y: -0.014718566, z: -6.519245}
+    m_Target: {x: 2.3478622, y: 0.76121837, z: -3.5181773}
     speed: 2
-    m_Value: {x: 9.345656, y: 0.04126879, z: -6.4657655}
+    m_Value: {x: 2.3478622, y: 0.76121837, z: -3.5181773}
   m_RenderMode: 0
   m_CameraMode:
     drawMode: 0
@@ -598,9 +598,9 @@ MonoBehaviour:
     speed: 2
     m_Value: {x: 0, y: 0, z: 0, w: 1}
   m_Size:
-    m_Target: 12.413094
+    m_Target: 15.788469
     speed: 2
-    m_Value: 11.878558
+    m_Value: 15.788469
   m_Ortho:
     m_Target: 1
     speed: 2
