@@ -19,8 +19,6 @@ public class HumanMoving : MonoBehaviour
 
     private Animator animator;
 
-    //private Vector3 lastPosition;
-
     private int randomIndex;
 
     // Start is called before the first frame update
@@ -28,7 +26,8 @@ public class HumanMoving : MonoBehaviour
     {
         animator = GetComponent<Animator>();
 
-        //Массив из методов движения, из которых раз в какой-то период времени будет выбираться и вызываться случайный.
+        //Массив из методов движения, из которых раз в какой-то период времени 
+        //будет выбираться и вызываться случайный.
         moving = new Moving[5];
         moving[0] = GoUp;
         moving[1] = GoDown;
@@ -40,7 +39,8 @@ public class HumanMoving : MonoBehaviour
         randomIndex = Random.Range(0, 5);
         moving[randomIndex].Invoke();
 
-        //Случайно выбирается промежуток времени, в течение которого человек не будет менять направление движения.
+        //Случайно выбирается промежуток времени, в течение которого 
+        //человек не будет менять направление движения.
         waitTime = Random.Range(1, 6);
         timer = 0.0f;
     }
@@ -48,17 +48,12 @@ public class HumanMoving : MonoBehaviour
     // Update is called once per frame
     void Update()
     {
-        //lastPosition = transform.position;
         transform.position += direction * speed * Time.deltaTime;
-        /*if (Equals(transform.position, lastPosition) && randomIndex != 4)
-        {
-            randomIndex = Random.Range(0, 5);
-            moving[randomIndex].Invoke();
-        }*/
 
         timer += Time.deltaTime;
 
-        //Проверяем, не прошло ли время waitTime. Если да, то человек меняет направление движения.
+        //Проверяем, не прошло ли время waitTime. 
+        //Если да, то человек меняет направление движения.
         if (timer > waitTime)
         {
             //Удаляем время waitTime.
@@ -68,8 +63,26 @@ public class HumanMoving : MonoBehaviour
             randomIndex = Random.Range(0, 5);
             moving[randomIndex].Invoke();
 
-            //Случайно выбирается промежуток времени, в течение которого человек не будет менять направление движения.
+            //Случайно выбирается промежуток времени, 
+            //в течение которого человек не будет менять направление движения.
             waitTime = Random.Range(1, 6);
+        }
+    }
+
+    /// <summary>
+    /// При столкновении человека с границей дороги (т.е. с землей/травой)
+    /// человек останавливается, пока не истечет время waitTime.
+    /// Затем меняет направление движения и, если снова произошло столкновение,
+    /// человек снова стоит на месте.
+    /// Можно подумать, как реализовать это получше.
+    /// </summary>
+    void OnCollisionStay2D(Collision2D collision)
+    {
+        if (collision.gameObject.tag == "Ground")
+        {
+            randomIndex = 4;
+            //randomIndex = Random.Range(0, 5);
+            moving[randomIndex].Invoke();
         }
     }
 
