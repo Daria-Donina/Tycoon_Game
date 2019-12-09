@@ -7,6 +7,9 @@ public class AnimalNecessities : MonoBehaviour
     [SerializeField]
     private float welfare = 100;
 
+    [SerializeField]
+    private float yearsLeft;
+
     //public GameObject welfareObject;
 
     // Start is called before the first frame update
