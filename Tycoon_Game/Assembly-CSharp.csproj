@@ -66,6 +66,7 @@
     <Compile Include="Assets\Scripts\Animals\AnimalMoving.cs" />
     <Compile Include="Assets\Scripts\Animals\AnimalNecessities.cs" />
     <Compile Include="Assets\Scripts\BarrierButton.cs" />
+    <Compile Include="Assets\Scripts\Camera\CameraController.cs" />
     <Compile Include="Assets\Scripts\ExitMaterialButton.cs" />
     <Compile Include="Assets\Scripts\ExitSizeButton.cs" />
     <Compile Include="Assets\Scripts\ExitStoreButton.cs" />
