@@ -64,6 +64,7 @@
   </ItemGroup>
   <ItemGroup>
     <Compile Include="Assets\Scripts\Animal.cs" />
+    <Compile Include="Assets\Scripts\PlayButton.cs" />
     <Reference Include="Unity.Timeline.Editor">
       <HintPath>C:/Users/mi2/spbu/Tycoon_Game/Tycoon_Game/Library/ScriptAssemblies/Unity.Timeline.Editor.dll</HintPath>
     </Reference>
@@ -266,7 +267,11 @@
       <HintPath>C:/Program Files/Unity/Hub/Editor/2019.2.11f1/Editor/Data/Managed/UnityEngine/UnityEngine.WindModule.dll</HintPath>
     </Reference>
     <Reference Include="UnityEngine.XRModule">
+<<<<<<< HEAD
       <HintPath>C:/Program Files/Unity/Hub/Editor/2019.2.11f1/Editor/Data/Managed/UnityEngine/UnityEngine.XRModule.dll</HintPath>
+=======
+      <HintPath>C:/Program Files/Unity/Hub/Editor/2019.2.9f1/Editor/Data/Managed/UnityEngine/UnityEngine.XRModule.dll</HintPath>
+>>>>>>> 37c33c8edbc00587fb4343ec7f194a635cc57b4d
     </Reference>
     <Reference Include="netstandard">
       <HintPath>C:/Program Files/Unity/Hub/Editor/2019.2.11f1/Editor/Data/NetStandard/ref/2.0.0/netstandard.dll</HintPath>
