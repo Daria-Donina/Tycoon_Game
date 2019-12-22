@@ -63,16 +63,17 @@
     </Reference>
   </ItemGroup>
   <ItemGroup>
-    <Compile Include="Assets\Scripts\AnimalMoving.cs" />
-    <Compile Include="Assets\Scripts\AnimalNecessities.cs" />
-    <Compile Include="Assets\Scripts\BarrierButton.cs" />
-    <Compile Include="Assets\Scripts\ExitMaterialButton.cs" />
-    <Compile Include="Assets\Scripts\ExitSizeButton.cs" />
-    <Compile Include="Assets\Scripts\ExitStoreButton.cs" />
-    <Compile Include="Assets\Scripts\HumanMoving.cs" />
-    <Compile Include="Assets\Scripts\MaterialButton.cs" />
-    <Compile Include="Assets\Scripts\PlayButton.cs" />
-    <Compile Include="Assets\Scripts\StoreButton.cs" />
+    <Compile Include="Assets\Scripts\Animals\AnimalMoving.cs" />
+    <Compile Include="Assets\Scripts\Animals\AnimalNecessities.cs" />
+    <Compile Include="Assets\Scripts\Buttons\BarrierButton.cs" />
+    <Compile Include="Assets\Scripts\Buttons\ExitMaterialButton.cs" />
+    <Compile Include="Assets\Scripts\Buttons\ExitSizeButton.cs" />
+    <Compile Include="Assets\Scripts\Buttons\ExitStoreButton.cs" />
+    <Compile Include="Assets\Scripts\Buttons\MaterialButton.cs" />
+    <Compile Include="Assets\Scripts\Buttons\PlayButton.cs" />
+    <Compile Include="Assets\Scripts\Buttons\StoreButton.cs" />
+    <Compile Include="Assets\Scripts\Camera\CameraController.cs" />
+    <Compile Include="Assets\Scripts\People\HumanMoving.cs" />
     <None Include="Assets\Sprites\Barriers\info\1-Read Me.txt" />
     <None Include="Assets\TextMesh Pro\Resources\Shaders\TMP_SDF-Surface-Mobile.shader" />
     <None Include="Assets\TextMesh Pro\Resources\LineBreaking Leading Characters.txt" />
