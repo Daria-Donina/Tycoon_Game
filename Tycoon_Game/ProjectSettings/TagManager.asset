@@ -18,7 +18,7 @@ TagManager:
   - Ground
   - People
   - Objects
-  - 
+  - Animals
   - 
   - 
   - 
@@ -39,18 +39,21 @@ TagManager:
   - 
   - 
   m_SortingLayers:
-  - name: Ignore Camera
-    uniqueID: 1981953501
-    locked: 0
-  - name: UI
-    uniqueID: 2870920845
-    locked: 0
   - name: Ground
     uniqueID: 3949957879
+    locked: 0
+  - name: Ignore Camera
+    uniqueID: 1981953501
     locked: 0
   - name: Default
     uniqueID: 0
     locked: 0
   - name: People
     uniqueID: 3879059057
+    locked: 0
+  - name: Animals
+    uniqueID: 4189255343
+    locked: 0
+  - name: UI
+    uniqueID: 2870920845
     locked: 0

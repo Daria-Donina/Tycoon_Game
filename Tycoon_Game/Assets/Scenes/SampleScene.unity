@@ -189,7 +189,7 @@ TilemapRenderer:
   m_AutoUVMaxAngle: 89
   m_LightmapParameters: {fileID: 0}
   m_SortingLayerID: -345009417
-  m_SortingLayer: -1
+  m_SortingLayer: -2
   m_SortingOrder: 0
   m_ChunkSize: {x: 32, y: 32, z: 32}
   m_ChunkCullingBounds: {x: 0, y: 0, z: 0}
@@ -6163,7 +6163,7 @@ Camera:
   m_Depth: -1
   m_CullingMask:
     serializedVersion: 2
-    m_Bits: 3639
+    m_Bits: 7735
   m_RenderingPath: -1
   m_TargetTexture: {fileID: 0}
   m_TargetDisplay: 0
@@ -7749,7 +7749,7 @@ GameObject:
   - component: {fileID: 1020747976}
   - component: {fileID: 1020747975}
   - component: {fileID: 1020747974}
-  m_Layer: 8
+  m_Layer: 5
   m_Name: StoreButton
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -8353,6 +8353,11 @@ PrefabInstance:
         type: 3}
       propertyPath: m_Name
       value: Bear
+      objectReference: {fileID: 0}
+    - target: {fileID: 2775294223127021420, guid: e7dddc948e3f69d408097f32545035bb,
+        type: 3}
+      propertyPath: m_Layer
+      value: 12
       objectReference: {fileID: 0}
     - target: {fileID: 2775294223127021427, guid: e7dddc948e3f69d408097f32545035bb,
         type: 3}
@@ -8959,7 +8964,7 @@ GameObject:
   - component: {fileID: 2032649492}
   - component: {fileID: 2032649494}
   - component: {fileID: 2032649493}
-  m_Layer: 8
+  m_Layer: 5
   m_Name: StoreButtonText
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -9361,6 +9366,11 @@ PrefabInstance:
       propertyPath: m_Name
       value: Lioness
       objectReference: {fileID: 0}
+    - target: {fileID: 7002565609974767575, guid: 08eefaf60134c8241b7404d02d150896,
+        type: 3}
+      propertyPath: m_Layer
+      value: 12
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 08eefaf60134c8241b7404d02d150896, type: 3}
 --- !u!1001 &1107990388068956797
@@ -9517,6 +9527,11 @@ PrefabInstance:
         type: 3}
       propertyPath: m_Name
       value: Monkey
+      objectReference: {fileID: 0}
+    - target: {fileID: 8906644024016503124, guid: dd7900d1312839b4db5ecc18d115bc3f,
+        type: 3}
+      propertyPath: m_SpriteTilingProperty.oldSize.y
+      value: 0.46666667
       objectReference: {fileID: 0}
     - target: {fileID: 8906644024016503126, guid: dd7900d1312839b4db5ecc18d115bc3f,
         type: 3}
@@ -9729,12 +9744,12 @@ PrefabInstance:
     - target: {fileID: 322922844301970757, guid: 37d3e68fd4194ef42bed3eef9d861504,
         type: 3}
       propertyPath: m_LocalPosition.x
-      value: -2.46
+      value: -2.52
       objectReference: {fileID: 0}
     - target: {fileID: 322922844301970757, guid: 37d3e68fd4194ef42bed3eef9d861504,
         type: 3}
       propertyPath: m_LocalPosition.y
-      value: 0.65
+      value: 0.37
       objectReference: {fileID: 0}
     - target: {fileID: 322922844301970757, guid: 37d3e68fd4194ef42bed3eef9d861504,
         type: 3}
@@ -10258,6 +10273,16 @@ PrefabInstance:
         type: 3}
       propertyPath: m_Name
       value: Tiger
+      objectReference: {fileID: 0}
+    - target: {fileID: 1750275846821830356, guid: a79531f84630a3448ae1894f31b64032,
+        type: 3}
+      propertyPath: m_SortingLayerID
+      value: -415908239
+      objectReference: {fileID: 0}
+    - target: {fileID: 1750275846821830356, guid: a79531f84630a3448ae1894f31b64032,
+        type: 3}
+      propertyPath: m_SortingLayer
+      value: 1
       objectReference: {fileID: 0}
     - target: {fileID: 1750275846821830357, guid: a79531f84630a3448ae1894f31b64032,
         type: 3}
